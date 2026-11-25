@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b3a75'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='900' font-size='34' text-anchor='middle' fill='%23ffffff'%3EP%3C/text%3E%3Crect x='14' y='50' width='36' height='4' rx='2' fill='%23e63946'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Autoservis Podborský – Blansko</title>
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="Ukázka webu: Autoservis Podborský, Blansko">
+<meta property="og:description" content="Takhle by mohl vypadat váš web. Ukázka připravená zdarma.">
+<meta property="og:image" content="https://podborsky-ukazka.netlify.app/og.png">
+<meta property="og:url" content="https://podborsky-ukazka.netlify.app/">
+<meta property="og:type" content="website">
+<meta name="description" content="Autoservis v Blansku. Servis a opravy osobních aut, diagnostika, výměna oleje, příprava na STK. Gellhornova 2235. Tel. 797 855 992.">
+<style>
+:root{--ink:#0f1b2d;--muted:#5a6779;--bg:#f4f7fb;--card:#fff;--blue:#0b3a75;--blue2:#134e9b;--red:#e63946;--line:#dfe6ef}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.demo{background:#111827;color:#fff;text-align:center;font-size:13px;padding:6px 10px}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--blue)}
+.logo i{width:34px;height:34px;border-radius:9px;background:var(--blue);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:900;border-bottom:3px solid var(--red)}
+nav a{text-decoration:none;margin-left:22px;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--blue)}
+.hdr-call{background:var(--red);color:#fff!important;font-weight:700;padding:9px 16px;border-radius:10px}
+.hero{background:linear-gradient(120deg,var(--blue) 0%,var(--blue2) 100%);color:#fff;padding:70px 0 0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:end}
+.badge{display:inline-block;background:rgba(255,255,255,.12);padding:6px 12px;border-radius:8px;font-size:14px}
+.badge b{color:#ffd166}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.08;margin:18px 0 16px;font-weight:800;letter-spacing:-.01em}
+.lead{font-size:clamp(17px,2vw,19px);color:#d6e2f3;max-width:560px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 60px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:10px;font-weight:700;text-decoration:none;font-size:17px}
+.btn.red{background:var(--red);color:#fff}
+.btn.white{background:#fff;color:var(--blue)}
+.quote-card{background:#fff;color:var(--ink);border-radius:16px 16px 0 0;padding:28px 28px 34px;box-shadow:0 -10px 40px rgba(0,0,0,.15)}
+.quote-card .big{font-size:26px;font-weight:800;line-height:1.2;color:var(--blue);margin-bottom:10px}
+.quote-card span{color:var(--muted);font-size:14px}
+.strip{background:#fff;border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:22px 20px}
+.strip div{font-size:14px;color:var(--muted)}
+.strip b{display:block;font-size:18px;color:var(--ink)}
+section{padding:70px 0}
+h2{font-size:clamp(26px,3.4vw,36px);line-height:1.15;margin-bottom:10px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin-bottom:34px;font-size:17px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;border-top:4px solid var(--blue)}
+.card h3{font-size:18px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.why div{display:flex;gap:14px}
+.why .n{flex:none;width:38px;height:38px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;display:grid;place-items:center}
+.why h3{font-size:17px;margin-bottom:4px}
+.why p{color:var(--muted);font-size:15px}
+.price table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.price td{padding:15px 20px;border-bottom:1px solid var(--line);font-size:16px}
+.price tr:last-child td{border-bottom:none}
+.price td:last-child{text-align:right;font-weight:700;white-space:nowrap;color:var(--blue)}
+.note{font-size:14px;color:var(--muted);margin-top:12px}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.stars{color:#f4b400;letter-spacing:2px;font-size:18px}
+.rev p{margin:10px 0 12px;font-size:15.5px}
+.rev span{font-size:14px;color:var(--muted)}
+.score{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.score b{font-size:44px;line-height:1;color:var(--blue)}
+.form{display:grid;gap:12px}
+.form input,.form select,.form textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff}
+.form textarea{min-height:90px}
+.form button{background:var(--red);color:#fff;border:0;padding:14px;border-radius:10px;font:inherit;font-weight:700;cursor:pointer}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.hours td{padding:7px 0;font-size:16px}
+.hours td:first-child{width:130px;color:var(--muted)}
+footer{background:var(--blue);color:#c4d3e8;padding:30px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.mbar{display:none}
+@media(max-width:800px){
+ nav{display:none}
+ .hero{padding-top:44px}
+ .hero-grid{grid-template-columns:1fr;gap:0}
+ .cta{margin-bottom:34px}
+ .strip .wrap{grid-template-columns:1fr 1fr}
+ .contact{grid-template-columns:1fr}
+ section{padding:52px 0}
+ .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9;background:#fff;border-top:1px solid var(--line);padding:10px;gap:10px}
+ .mbar a{flex:1;text-align:center;padding:13px;border-radius:10px;font-weight:700;text-decoration:none}
+ .mbar .c{background:var(--red);color:#fff}
+ .mbar .n{background:var(--blue);color:#fff}
+ footer{padding-bottom:90px}
+}
+</style>
+</head>
+<body>
+<div class="demo">Ukázka webu připravená zdarma pro Autoservis Podborský · ceny a texty doplníme podle vás</div>
+<header><div class="wrap">
+ <div class="logo"><i>P</i>Autoservis Podborský</div>
+ <nav><a href="#sluzby">Služby</a><a href="#cenik">Ceník</a><a href="#recenze">Recenze</a><a href="#objednat">Objednat se</a><a class="hdr-call" href="tel:+420797855992">797 855 992</a></nav>
+</div></header>
+
+<section class="hero" style="padding-bottom:0"><div class="wrap hero-grid">
+ <div>
+  <div class="badge">★ <b>4,9</b> ze 76 recenzí na Googlu</div>
+  <h1>Autoservis v Blansku, kde co řekneme, to platí.</h1>
+  <p class="lead">Servis a opravy osobních aut. Rychlé termíny, férové ceny a při každé návštěvě vám řekneme, co na autě hrozí, ještě než se to pokazí.</p>
+  <div class="cta">
+   <a class="btn red" href="tel:+420797855992">📞 Zavolat 797 855 992</a>
+   <a class="btn white" href="#objednat">Objednat se online</a>
+  </div>
+ </div>
+ <div class="quote-card">
+  <div class="stars">★★★★★</div>
+  <div class="big">„Servis, který jsem dlouho hledal.“</div>
+  <span>Martin, recenze na Googlu</span>
+ </div>
+</div></section>
+
+<div class="strip"><div class="wrap">
+ <div><b>Po–Pá 8–16</b>otevírací doba</div>
+ <div><b>Gellhornova 2235</b>Blansko</div>
+ <div><b>Rychlé termíny</b>i při poruše</div>
+ <div><b>4,9 ★</b>76 recenzí</div>
+</div></div>
+
+<section id="sluzby"><div class="wrap">
+ <h2>Služby</h2>
+ <p class="sub">Postaráme se o běžný servis i o složitější opravy, do kterých se jinde nechce.</p>
+ <div class="grid">
+  <div class="card"><h3>Pravidelný servis</h3><p>Výměna oleje a filtrů, kontrola brzd, kapalin a podvozku podle předpisu výrobce.</p></div>
+  <div class="card"><h3>Opravy a diagnostika</h3><p>Najdeme příčinu závady, i když ji předchozí servis přehlédl. Teprve pak opravujeme.</p></div>
+  <div class="card"><h3>Brzdy a podvozek</h3><p>Destičky, kotouče, tlumiče, čepy a ramena. Výměna rychle a s garancí.</p></div>
+  <div class="card"><h3>Příprava na STK</h3><p>Projedeme auto před technickou, abyste tam jeli s klidem a napoprvé.</p></div>
+ </div>
+</div></section>
+
+<section style="background:#fff"><div class="wrap">
+ <h2>Proč k nám jezdí i z jiných servisů</h2>
+ <p class="sub">Shrnuto z toho, co o nás píšou zákazníci.</p>
+ <div class="why">
+  <div><span class="n">1</span><div><h3>Jasná domluva</h3><p>Předem víte, co se bude dělat a kolik to bude stát. Žádná překvapení na faktuře.</p></div></div>
+  <div><span class="n">2</span><div><h3>Bez výmluv</h3><p>Pustíme se i do práce, kterou jinde odmítnou jako „nejde to“.</p></div></div>
+  <div><span class="n">3</span><div><h3>Upozorníme dopředu</h3><p>Při každém servisu vám řekneme, co bude brzy potřeba, abyste nezůstali stát.</p></div></div>
+ </div>
+</div></section>
+
+<section id="cenik" class="price"><div class="wrap">
+ <h2>Orientační ceník</h2>
+ <p class="sub">Přesnou cenu řekneme podle konkrétního auta, nejlépe po telefonu.</p>
+ <table>
+  <tr><td>Výměna oleje a filtru (práce)</td><td>od ___ Kč</td></tr>
+  <tr><td>Diagnostika závady</td><td>od ___ Kč</td></tr>
+  <tr><td>Výměna brzdových destiček (náprava)</td><td>od ___ Kč</td></tr>
+  <tr><td>Příprava na STK</td><td>od ___ Kč</td></tr>
+ </table>
+ <p class="note">Ceny doplníme podle vašeho skutečného ceníku.</p>
+</div></section>
+
+<section id="recenze" style="background:#fff"><div class="wrap">
+ <h2>Co o nás říkají zákazníci</h2>
+ <div class="score"><b>4,9</b><div><div class="stars">★★★★★</div><span style="color:var(--muted)">76 recenzí na Google Maps</span></div></div>
+ <div class="reviews">
+  <div class="rev"><div class="stars">★★★★★</div><p>„Co řekne, to platí. Rychlé termíny a příznivé ceny.“</p><span>Martin, Google</span></div>
+  <div class="rev"><div class="stars">★★★★★</div><p>„Práce se chopili bez výmluv, ochotně, trpělivě a zodpovědně.“</p><span>Lenka P., Google</span></div>
+  <div class="rev"><div class="stars">★★★★★</div><p>„Okamžitá pomoc při poruše. Odhalili i pochybení předchozího servisu.“</p><span>Matěj K., Google</span></div>
+ </div>
+</div></section>
+
+<section id="objednat"><div class="wrap contact">
+ <div>
+  <h2>Objednejte se</h2>
+  <p class="sub" style="margin-bottom:22px">Napište, co auto potřebuje, a ozveme se s termínem. Nebo rovnou zavolejte.</p>
+  <form class="form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Ukázka: formulář začne fungovat po spuštění webu'">
+   <input placeholder="Jméno a telefon" required>
+   <input placeholder="Značka a model auta, rok výroby">
+   <select><option>Pravidelný servis</option><option>Oprava / závada</option><option>Brzdy a podvozek</option><option>Příprava na STK</option><option>Jiné</option></select>
+   <textarea placeholder="Co je potřeba udělat?"></textarea>
+   <button type="submit">Odeslat poptávku</button>
+  </form>
+ </div>
+ <div class="card" style="border-top-color:var(--red)">
+  <h3 style="margin-bottom:10px">Autoservis Podborský s.r.o.</h3>
+  <p style="color:var(--ink);margin-bottom:6px">Gellhornova 2235, 678 01 Blansko</p>
+  <p style="margin-bottom:18px"><a href="tel:+420797855992"><b>797 855 992</b></a></p>
+  <table class="hours">
+   <tr><td>Pondělí–Pátek</td><td>8:00–16:00</td></tr>
+   <tr><td>Sobota–Neděle</td><td>zavřeno</td></tr>
+  </table>
+  <a class="btn red" style="margin-top:20px;font-size:15px;padding:11px 18px" href="https://www.google.com/maps/search/?api=1&query=Autoservis+Podborsk%C3%BD+Gellhornova+2235+Blansko">📍 Navigovat</a>
+ </div>
+</div></section>
+
+<footer><div class="wrap"><span>© Autoservis Podborský s.r.o., Blansko</span><span>Ukázka webu · shopnetwebovky.netlify.app</span></div></footer>
+<div class="mbar"><a class="c" href="tel:+420797855992">📞 Zavolat</a><a class="n" href="#objednat">Objednat se</a></div>
+</body>
+</html>
