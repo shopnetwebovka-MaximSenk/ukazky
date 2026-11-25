@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233b2a20'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-style='italic' font-size='36' text-anchor='middle' fill='%23f3e6d3'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Café Auspitz – kavárna na Dukelském náměstí v Hustopečích</title>
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="Ukázka webu: Café Auspitz, Hustopeče">
+<meta property="og:description" content="Takhle by mohl vypadat váš web. Ukázka připravená zdarma.">
+<meta property="og:image" content="https://auspitz-ukazka.netlify.app/og.png">
+<meta property="og:url" content="https://auspitz-ukazka.netlify.app/">
+<meta property="og:type" content="website">
+<meta name="description" content="Kavárna v centru Hustopečí. Výborná káva i s rostlinným mlékem, domácí zákusky, věnečky a loupáčky. St–Ne 9–18. Dukelské nám. 94.">
+<style>
+:root{--ink:#2b1e17;--muted:#7a6a5e;--bg:#f8f2ea;--cream:#f3e6d3;--card:#fffaf3;--brown:#3b2a20;--accent:#b5653b;--line:#e8dccb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+.serif{font-family:Georgia,"Times New Roman",serif}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.demo{background:var(--accent);color:#fff;text-align:center;font-size:13px;padding:6px 10px}
+header{background:var(--bg);position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-family:Georgia,serif;font-style:italic;font-size:26px;color:var(--brown)}
+nav a{text-decoration:none;margin-left:22px;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:64px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
+.open{display:inline-flex;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:14px;color:var(--muted)}
+.open b{color:var(--accent)}
+h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(36px,5.4vw,60px);line-height:1.05;margin:18px 0 18px;color:var(--brown)}
+h1 em{color:var(--accent)}
+.lead{font-size:clamp(17px,2vw,19px);color:var(--muted);max-width:520px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px}
+.btn.dark{background:var(--brown);color:var(--cream)}
+.btn.line{border:1.5px solid var(--brown);color:var(--brown)}
+.photo{border-radius:200px 200px 24px 24px;aspect-ratio:4/5;background:
+ radial-gradient(circle at 50% 42%,#f6ead8 0 18%,transparent 18.5%),
+ radial-gradient(circle at 50% 42%,#7a4a2d 0 24%,transparent 24.5%),
+ radial-gradient(circle at 50% 44%,#fff 0 31%,transparent 31.5%),
+ linear-gradient(160deg,#c89b72,#8a5a3b);display:flex;align-items:flex-end;justify-content:center;padding:20px;color:#fff;font-size:13px;opacity:.95}
+.score{display:flex;gap:10px;align-items:center;margin-top:30px;color:var(--muted);font-size:15px}
+.score b{font-family:Georgia,serif;font-size:34px;color:var(--brown);font-weight:400}
+.stars{color:#d99a2b;letter-spacing:2px}
+section{padding:70px 0}
+h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(30px,3.8vw,42px);line-height:1.1;margin-bottom:10px;color:var(--brown)}
+.sub{color:var(--muted);margin-bottom:34px;font-size:17px;max-width:620px}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.menu .col{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}
+.menu h3{font-family:Georgia,serif;font-weight:400;font-size:24px;color:var(--accent);margin-bottom:14px}
+.item{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.item:last-child{border-bottom:0}
+.item span{color:var(--muted);font-size:14px;display:block}
+.item b{white-space:nowrap;font-weight:600}
+.note{font-size:14px;color:var(--muted);margin-top:14px}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:180px;gap:12px}
+.g{border-radius:16px;display:flex;align-items:flex-end;padding:12px;color:#fff;font-size:13px}
+.g1{grid-column:span 2;grid-row:span 2;background:linear-gradient(150deg,#d8b48c,#7b4a2c)}
+.g2{background:linear-gradient(150deg,#e9cfa9,#b07a4f)}
+.g3{background:linear-gradient(150deg,#c7a27e,#5e3a26)}
+.g4{background:linear-gradient(150deg,#f0d9b5,#c08457)}
+.g5{background:linear-gradient(150deg,#b98c66,#4d2f1f)}
+.events{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.ev{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;gap:16px}
+.date{flex:none;width:58px;text-align:center;background:var(--brown);color:var(--cream);border-radius:12px;padding:8px 0;font-family:Georgia,serif}
+.date b{display:block;font-size:24px;font-weight:400;line-height:1.1}
+.date small{font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.ev h3{font-size:17px;margin-bottom:4px}
+.ev p{color:var(--muted);font-size:15px}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.rev p{font-family:Georgia,serif;font-size:18px;margin:10px 0 12px;color:var(--brown)}
+.rev span{font-size:14px;color:var(--muted)}
+.visit{background:var(--brown);color:var(--cream);border-radius:28px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.visit h2{color:var(--cream)}
+.visit p{color:#d9c7b0}
+.hours td{padding:6px 0;font-size:16px}
+.hours td:first-child{width:120px;color:#d9c7b0}
+.hours .closed td{opacity:.55}
+.visit .btn{background:var(--cream);color:var(--brown);margin-top:18px}
+footer{padding:30px 0 40px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.mbar{display:none}
+@media(max-width:800px){
+ nav{display:none}
+ .hero{padding:36px 0 50px}
+ .hero-grid,.menu,.visit{grid-template-columns:1fr}
+ .photo{aspect-ratio:16/11;border-radius:120px 120px 20px 20px}
+ .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:140px}
+ .visit{padding:28px}
+ section{padding:50px 0}
+ .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--bg);border-top:1px solid var(--line);padding:10px;gap:10px}
+ .mbar a{flex:1;text-align:center;padding:13px;border-radius:999px;font-weight:600;text-decoration:none}
+ .mbar .c{background:var(--brown);color:var(--cream)}
+ .mbar .n{border:1.5px solid var(--brown);color:var(--brown)}
+ footer{padding-bottom:100px}
+}
+</style>
+</head>
+<body>
+<div class="demo">Ukázka webu připravená zdarma pro Café Auspitz · menu, ceny a fotky doplníme podle vás</div>
+<header><div class="wrap">
+ <div class="logo">Café Auspitz</div>
+ <nav><a href="#menu">Menu</a><a href="#galerie">Galerie</a><a href="#akce">Akce</a><a href="#navsteva">Otevírací doba</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap hero-grid">
+ <div>
+  <div class="open">☕ Otevřeno <b>středa–neděle 9–18</b></div>
+  <h1>Káva a domácí zákusky <em>na Dukelském náměstí</em></h1>
+  <p class="lead">Malá kavárna v srdci Hustopečí. Výborná káva i s rostlinným mlékem, zákusky z vlastní výroby a obsluha, která vám zlepší den. Zastavte se cestou na Pálavu nebo jen tak.</p>
+  <div class="cta">
+   <a class="btn dark" href="#menu">Prohlédnout menu</a>
+   <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Auspitz+Hustope%C4%8De">📍 Jak k nám</a>
+  </div>
+  <div class="score"><b>4,8</b><div><div class="stars">★★★★★</div>257 recenzí na Googlu</div></div>
+ </div>
+ <div class="photo">Sem přijde vaše nejhezčí fotka</div>
+</div></section>
+
+<section id="menu" style="background:var(--cream)"><div class="wrap">
+ <h2>Menu</h2>
+ <p class="sub">Zákusky pečeme sami a nabídka se mění podle sezóny. Na místě, s sebou i s donáškou.</p>
+ <div class="menu">
+  <div class="col">
+   <h3>Káva a nápoje</h3>
+   <div class="item"><div>Espresso<span>i bez kofeinu</span></div><b>___ Kč</b></div>
+   <div class="item"><div>Cappuccino<span>i s rostlinným mlékem</span></div><b>___ Kč</b></div>
+   <div class="item"><div>Flat white</div><b>___ Kč</b></div>
+   <div class="item"><div>Ledové kokos-mango s kávou<span>letní nabídka</span></div><b>___ Kč</b></div>
+   <div class="item"><div>Čaj, horká čokoláda</div><b>___ Kč</b></div>
+  </div>
+  <div class="col">
+   <h3>Domácí zákusky</h3>
+   <div class="item"><div>Věnečky<span>podle zákazníků povinnost</span></div><b>___ Kč</b></div>
+   <div class="item"><div>Borůvkovo-kokosový dort</div><b>___ Kč</b></div>
+   <div class="item"><div>Loupáčky</div><b>___ Kč</b></div>
+   <div class="item"><div>Dort dne</div><b>___ Kč</b></div>
+   <div class="item"><div>Dorty na objednávku<span>zeptejte se na obsluze</span></div><b>___ Kč</b></div>
+  </div>
+ </div>
+ <p class="note">Položky a ceny jsou orientační, doplníme podle vašeho skutečného menu. Menu půjde jednoduše měnit.</p>
+</div></section>
+
+<section id="galerie"><div class="wrap">
+ <h2>Jak to u nás vypadá</h2>
+ <p class="sub">Tady budou vaše fotky kavárny, kávy a zákusků.</p>
+ <div class="gallery">
+  <div class="g g1">Interiér kavárny</div>
+  <div class="g g2">Cappuccino</div>
+  <div class="g g3">Věnečky</div>
+  <div class="g g4">Dort</div>
+  <div class="g g5">Náměstí</div>
+ </div>
+</div></section>
+
+<section id="akce" style="background:var(--cream)"><div class="wrap">
+ <h2>Co chystáme</h2>
+ <p class="sub">Přehled akcí, sezónní nabídky a změn otevírací doby na jednom místě. Ukázkové akce:</p>
+ <div class="events">
+  <div class="ev"><div class="date"><b>__</b><small>pro</small></div><div><h3>Adventní nabídka</h3><p>Vánoční zákusky a horké nápoje. Cukroví na objednávku.</p></div></div>
+  <div class="ev"><div class="date"><b>__</b><small>bře</small></div><div><h3>Mandloně v květu</h3><p>Sezónní mandlové speciality k jarní procházce.</p></div></div>
+  <div class="ev"><div class="date"><b>__</b><small>zář</small></div><div><h3>Burčákové dny</h3><p>Prodloužená otevírací doba během slavností.</p></div></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <h2>Co o nás píšete</h2>
+ <p class="sub">Průměr 4,8 z 257 recenzí na Googlu.</p>
+ <div class="reviews">
+  <div class="rev"><div class="stars">★★★★★</div><p>„Věnečky jako zákusek musíte ochutnat.“</p><span>Petra K., Google</span></div>
+  <div class="rev"><div class="stars">★★★★★</div><p>„Tuto kavárnu nesmíte jen tak obejít.“</p><span>Michal P., Google</span></div>
+  <div class="rev"><div class="stars">★★★★★</div><p>„Velmi příjemná obsluha a výborná káva.“</p><span>Serhii S., Google</span></div>
+ </div>
+</div></section>
+
+<section id="navsteva" style="padding-top:0"><div class="wrap">
+ <div class="visit">
+  <div>
+   <h2>Přijďte k nám</h2>
+   <p style="margin-bottom:6px">Dukelské nám. 94, 693 01 Hustopeče</p>
+   <p><a href="tel:+420731106518" style="color:var(--cream)"><b>731 106 518</b></a></p>
+   <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Auspitz+Hustope%C4%8De">📍 Navigovat</a>
+  </div>
+  <table class="hours">
+   <tr class="closed"><td>Pondělí</td><td>zavřeno</td></tr>
+   <tr class="closed"><td>Úterý</td><td>zavřeno</td></tr>
+   <tr><td>Středa</td><td>9:00–18:00</td></tr>
+   <tr><td>Čtvrtek</td><td>9:00–18:00</td></tr>
+   <tr><td>Pátek</td><td>9:00–18:00</td></tr>
+   <tr><td>Sobota</td><td>9:00–18:00</td></tr>
+   <tr><td>Neděle</td><td>9:00–18:00</td></tr>
+  </table>
+ </div>
+</div></section>
+
+<footer><div class="wrap"><span>© Café Auspitz, Hustopeče</span><span>Ukázka webu · shopnetwebovky.netlify.app</span></div></footer>
+<div class="mbar"><a class="c" href="#menu">☕ Menu</a><a class="n" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Auspitz+Hustope%C4%8De">📍 Navigovat</a></div>
+</body>
+</html>
