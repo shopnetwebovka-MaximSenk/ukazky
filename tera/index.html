@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TERA cosmetics – kosmetika v Hodoníně</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Kosmetický salon TERA cosmetics v Hodoníně, Národní třída 2015/99. Ošetření pleti s vysvětlením každého kroku. Objednání na 723 907 501.">
+<meta property="og:title" content="Ukázka webu: TERA cosmetics, Hodonín">
+<meta property="og:description" content="Takhle by mohl vypadat váš web. Ukázka připravená zdarma.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23465a44'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23f4f2ec'%3ET%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#f6f4ef;--card:#fdfcf9;--raised:#ecebe4;
+ --ink:#1d1f1b;--ink2:#545950;--muted:#71766c;
+ --line:rgba(29,31,27,.09);
+ --accent:#465a44;--accent-soft:#dfe5d8;--accent-ink:#f4f2ec;
+ --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Figtree,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.demo{background:var(--ink);color:#cfd3c8;text-align:center;font-size:13px;padding:8px 16px}
+
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:Newsreader,Georgia,serif;font-size:22px;font-weight:500;text-decoration:none;letter-spacing:.02em}
+nav{display:flex;align-items:center;gap:28px}
+nav a{text-decoration:none;font-size:15px;color:var(--ink2);transition:color .15s var(--ease)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 20px;border-radius:10px;font-weight:500;font-size:16px;text-decoration:none;transition:background-color .15s var(--ease),transform .12s var(--ease)}
+.btn:active{transform:scale(.98)}
+.btn-accent{background:var(--accent);color:var(--accent-ink)}
+.btn-accent:hover{background:#3a4b38}
+.btn-quiet{background:var(--raised);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.btn-quiet:hover{background:#e2e1d9}
+nav .btn{height:36px;padding:0 16px;font-size:15px}
+
+.hero{padding:88px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.where{font-size:14px;color:var(--muted)}
+h1{font-family:Newsreader,Georgia,serif;font-weight:400;font-size:64px;line-height:1.05;letter-spacing:-.02em;margin:16px 0 20px}
+.lead{font-size:19px;color:var(--ink2);max-width:31rem}
+.cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.meta{display:flex;gap:32px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);flex-wrap:wrap}
+.meta small{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+.meta div div{font-size:15px;color:var(--ink2)}
+.meta b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
+
+/* moment: průběh návštěvy */
+.visitcard{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:36px;box-shadow:0 8px 24px rgba(0,0,0,.05)}
+.visitcard .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:24px}
+.visitcard h3{font-family:Newsreader,Georgia,serif;font-weight:400;font-size:28px}
+.visitcard .top span{font-size:13px;color:var(--muted)}
+.step{display:grid;grid-template-columns:32px 1fr;gap:16px;position:relative;padding-bottom:22px}
+.step:last-child{padding-bottom:0}
+.step:not(.end):before{content:"";position:absolute;left:15px;top:34px;bottom:2px;width:1px;background:var(--line)}
+.dot{width:32px;height:32px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}
+.step.on .dot{background:var(--accent);color:var(--accent-ink)}
+.step b{font-weight:500;display:block;margin-top:4px}
+.step p{font-size:14px;color:var(--ink2)}
+.note{margin-top:24px;padding:16px;border-radius:12px;background:var(--bg);font-size:14px;color:var(--ink2)}
+
+section{padding:96px 0}
+h2{font-family:Newsreader,Georgia,serif;font-weight:400;font-size:44px;line-height:1.1;letter-spacing:-.02em}
+.intro{color:var(--ink2);font-size:17px;max-width:36rem;margin:12px 0 40px}
+
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+.svc h3{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:24px;margin-bottom:8px}
+.svc p{color:var(--ink2);font-size:15px}
+.svc .price{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+
+.rev{background:var(--accent);color:var(--accent-ink)}
+.rev .wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:center}
+.rev h2{color:var(--accent-ink)}
+.rev .rating{font-family:Newsreader,Georgia,serif;font-size:72px;line-height:1;margin-top:20px;font-variant-numeric:tabular-nums}
+.rev .rating span{display:block;font-family:Figtree,sans-serif;font-size:15px;color:#c9d2c3;margin-top:8px}
+.rev ul{list-style:none}
+.rev li{font-family:Newsreader,Georgia,serif;font-size:26px;line-height:1.3;padding:20px 0;border-bottom:1px solid rgba(244,242,236,.18)}
+.rev li:first-child{padding-top:0}
+.rev li:last-child{border-bottom:0}
+
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact p{color:var(--ink2);margin-top:12px}
+.phone{display:inline-block;margin-top:8px;font-size:22px;text-decoration:none;font-variant-numeric:tabular-nums}
+.links{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.how{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+.how h3{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:22px;margin-bottom:12px}
+.how p{color:var(--ink2);font-size:15px;margin-top:8px}
+
+footer{padding:32px 0 48px;font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.mbar{display:none}
+
+@media(max-width:860px){
+ nav a:not(.btn){display:none}
+ .hero{padding:48px 0 64px}
+ .hero .wrap,.services,.rev .wrap,.contact{grid-template-columns:1fr}
+ .hero .wrap{gap:40px}
+ h1{font-size:42px}
+ h2{font-size:34px}
+ .lead{font-size:17px}
+ .visitcard{padding:24px}
+ section{padding:64px 0}
+ .rev .wrap,.contact{gap:32px}
+ .rev li{font-size:22px}
+ .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--bg);border-top:1px solid var(--line);padding:12px;gap:12px}
+ .mbar a{flex:1;justify-content:center}
+ footer{padding-bottom:96px}
+}
+</style>
+</head>
+<body>
+<div class="demo">Ukázka webu připravená zdarma pro TERA cosmetics · služby, ceník a fotky doplníme podle vás</div>
+
+<header><div class="wrap">
+ <a class="logo" href="#">TERA cosmetics</a>
+ <nav><a href="#sluzby">Služby</a><a href="#recenze">Recenze</a><a href="#kontakt">Kontakt</a><a class="btn btn-accent" href="tel:+420723907501">Objednat se</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+ <div>
+  <div class="where">Národní třída 2015/99, Hodonín · v NEBI</div>
+  <h1>Péče o pleť, u které víte, co se děje</h1>
+  <p class="lead">Kosmetika v Hodoníně, kde vám Terezka vysvětlí každý krok ošetření a poradí, jak o pleť pečovat doma. I když jdete na kosmetiku poprvé.</p>
+  <div class="cta">
+   <a class="btn btn-accent" href="tel:+420723907501">Objednat se</a>
+   <a class="btn btn-quiet" href="#sluzby">Služby a ceník</a>
+  </div>
+  <div class="meta">
+   <div><small>Objednání</small><div>Po–Pá, telefon nebo WhatsApp</div></div>
+   <div><small>Google</small><div><b>5,0</b> z 5 · 10 recenzí</div></div>
+  </div>
+ </div>
+ <div class="visitcard" aria-label="Jak probíhá návštěva">
+  <div class="top"><h3>Vaše návštěva</h3><span>ukázka průběhu</span></div>
+  <div class="step on"><div class="dot">1</div><div><b>Rozhovor o pleti</b><p>Co vás trápí a co od ošetření čekáte</p></div></div>
+  <div class="step"><div class="dot">2</div><div><b>Ošetření</b><p>Každý krok vysvětlíme, víte, co a proč se děje</p></div></div>
+  <div class="step end"><div class="dot">3</div><div><b>Rady na doma</b><p>Jak o pleť pečovat do další návštěvy</p></div></div>
+  <div class="note">Přesný průběh a služby doplníme podle toho, jak pracujete.</div>
+ </div>
+</div></section>
+
+<section id="sluzby" style="padding-top:0"><div class="wrap">
+ <h2>Služby</h2>
+ <p class="intro">Ceník na rok 2027 už máte, stačí ho sem přenést. Tady je ukázka, jak by služby mohly vypadat.</p>
+ <div class="services">
+  <div class="svc"><h3>Ošetření pleti</h3><p>Ošetření podle typu pleti s vysvětlením každého kroku.</p><div class="price">Cena podle ceníku 2027</div></div>
+  <div class="svc"><h3>Masáž obličeje a dekoltu</h3><p>Uvolnění a péče, kterou klientky v recenzích chválí nejvíc.</p><div class="price">Cena podle ceníku 2027</div></div>
+  <div class="svc"><h3>Konzultace</h3><p>Poradíme s domácí péčí a vhodnou kosmetikou pro vaši pleť.</p><div class="price">Cena podle ceníku 2027</div></div>
+ </div>
+</div></section>
+
+<section id="recenze" class="rev"><div class="wrap">
+ <div>
+  <h2>Co píšou klientky</h2>
+  <div class="rating">5,0<span>z 10 recenzí na Googlu, všechny za pět hvězd</span></div>
+ </div>
+ <ul>
+  <li>Terezka vysvětlí každý krok a poradí, i úplným začátečníkům</li>
+  <li>Spokojenost i po dvaceti letech bez kosmetiky</li>
+  <li>Šikovná, milá a pečlivá, pleti se věnuje naplno</li>
+ </ul>
+</div></section>
+
+<section id="kontakt"><div class="wrap contact">
+ <div>
+  <h2>Objednejte se</h2>
+  <p>Národní třída 2015/99, 695 01 Hodonín<br>v NEBI</p>
+  <a class="phone" href="tel:+420723907501">723 907 501</a>
+  <div class="links">
+   <a class="btn btn-accent" href="https://wa.me/420723907501">Napsat na WhatsApp</a>
+   <a class="btn btn-quiet" href="https://www.instagram.com/tera.cosmetics/">Instagram</a>
+  </div>
+ </div>
+ <div class="how">
+  <h3>Jak se objednat</h3>
+  <p>Zavolejte nebo napište na WhatsApp. Ozveme se a domluvíme termín, který vám sedí.</p>
+  <p>Ošetření probíhají ve všední dny podle domluvy.</p>
+ </div>
+</div></section>
+
+<footer><div class="wrap"><span>© TERA cosmetics, Hodonín</span><span>Ukázka webu · shopnetwebovky.netlify.app</span></div></footer>
+<div class="mbar"><a class="btn btn-accent" href="tel:+420723907501">Zavolat</a><a class="btn btn-quiet" href="https://wa.me/420723907501">WhatsApp</a></div>
+</body>
+</html>
