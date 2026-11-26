@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uzenářství Hlavinka – uzeniny podle prvorepublikových receptur, Brno</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Uzenářství na Vídeňské v Brně. Klobásy, špekáčky, paštiky a slanina podle prvorepublikových receptur. Po–Pá 8–16.">
+<meta property="og:title" content="Ukázka webu: Uzenářství Hlavinka, Brno">
+<meta property="og:description" content="Takhle by mohl vypadat váš web. Ukázka připravená zdarma.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235b221d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23f3ede2'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+ --paper:#f3ede2;--card:#faf6ef;--raised:#e9e1d3;
+ --ink:#1e1a16;--ink2:#564c42;--muted:#776b5e;
+ --line:rgba(30,26,22,.12);
+ --accent:#5b221d;--accent-ink:#f3ede2;
+ --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:16px}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.demo{background:var(--ink);color:#d6ccbf;text-align:center;font-size:13px;padding:8px 16px}
+
+/* signature: dvojitá linka jako na starém vývěsním štítu */
+.rule{border:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);height:4px;opacity:.85}
+
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:Fraunces,Georgia,serif;font-size:24px;font-weight:500;text-decoration:none;letter-spacing:-.01em}
+.logo small{display:block;font-family:"Instrument Sans",sans-serif;font-size:12px;font-weight:400;color:var(--muted);letter-spacing:0;margin-top:2px}
+nav{display:flex;align-items:center;gap:28px}
+nav a{text-decoration:none;font-size:15px;color:var(--ink2);transition:color .15s var(--ease)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 20px;border-radius:8px;font-weight:500;font-size:16px;text-decoration:none;transition:background-color .15s var(--ease),transform .12s var(--ease)}
+.btn:active{transform:scale(.98)}
+.btn-accent{background:var(--accent);color:var(--accent-ink)}
+.btn-accent:hover{background:#471a16}
+.btn-quiet{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.btn-quiet:hover{background:var(--raised)}
+nav .btn{height:36px;padding:0 16px;font-size:15px}
+
+.hero{padding:72px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.since{font-size:14px;color:var(--muted)}
+h1{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:68px;line-height:1.03;letter-spacing:-.025em;margin:16px 0 20px}
+.lead{font-size:19px;color:var(--ink2);max-width:32rem}
+.cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.meta{display:flex;gap:32px;margin-top:40px;padding-top:20px;flex-wrap:wrap;border-top:1px solid var(--line)}
+.meta small{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+.meta div div{font-size:15px;color:var(--ink2)}
+.meta b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
+
+/* moment: lístek z pultu zabalený v papíru */
+.counter{background:#2a211b;border-radius:16px;padding:48px 40px;min-height:500px;display:grid;place-items:center;position:relative;overflow:hidden}
+.counter:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(0,0,0,.18))}
+.slip{position:relative;width:100%;max-width:340px;background:#f7f1e4;color:var(--ink);padding:32px 28px 28px;transform:rotate(1.5deg);box-shadow:0 24px 48px rgba(0,0,0,.4),0 2px 4px rgba(0,0,0,.25)}
+.slip:before,.slip:after{content:"";position:absolute;left:0;right:0;height:8px;background:radial-gradient(circle at 4px 0,transparent 4px,#f7f1e4 4.5px) repeat-x;background-size:8px 8px}
+.slip:before{top:-8px;transform:rotate(180deg)}
+.slip:after{bottom:-8px}
+.slip h3{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:26px;text-align:center;line-height:1.1}
+.slip .sub{text-align:center;font-size:12px;color:var(--muted);margin:6px 0 16px}
+.slip .rule{margin-bottom:14px}
+.slip ul{list-style:none}
+.slip li{display:flex;justify-content:space-between;gap:12px;font-size:15px;padding:8px 0;border-bottom:1px dashed rgba(30,26,22,.22)}
+.slip li:last-child{border-bottom:0}
+.slip li span{color:var(--muted);font-size:13px}
+.slip .foot{margin-top:16px;font-size:12px;color:var(--muted);text-align:center}
+
+section{padding:96px 0}
+h2{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:46px;line-height:1.08;letter-spacing:-.02em}
+.intro{color:var(--ink2);font-size:17px;max-width:36rem;margin:12px 0 40px}
+
+.goods{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.good{padding:28px 24px 32px;border-right:1px solid var(--line)}
+.good:last-child{border-right:0}
+.good .n{font-family:Fraunces,Georgia,serif;font-size:14px;color:var(--accent);font-variant-numeric:tabular-nums}
+.good h3{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:24px;margin:12px 0 8px}
+.good p{font-size:15px;color:var(--ink2)}
+
+.story{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.story blockquote{font-family:Fraunces,Georgia,serif;font-size:30px;line-height:1.25;letter-spacing:-.01em}
+.story .who{margin-top:16px;font-size:14px;color:var(--muted)}
+.praise{list-style:none;margin-top:8px}
+.praise li{padding:14px 0;border-bottom:1px solid var(--line);font-size:16px;color:var(--ink2)}
+.praise li b{font-weight:500;color:var(--ink)}
+.rating{display:flex;align-items:baseline;gap:12px;margin-bottom:12px}
+.rating b{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:56px;line-height:1;font-variant-numeric:tabular-nums}
+.rating span{color:var(--ink2)}
+
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.visit p{color:var(--ink2);margin-top:12px}
+.phone{display:inline-block;margin-top:8px;font-size:22px;text-decoration:none;font-variant-numeric:tabular-nums}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:12px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--ink2)}
+.hours tr.off td{color:var(--muted)}
+.hours tr.today td{color:var(--ink);font-weight:500}
+.hours tr.today td:first-child{box-shadow:inset 3px 0 0 var(--accent);padding-left:12px}
+.links{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+
+footer{padding:24px 0 48px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:20px}
+.mbar{display:none}
+
+@media(max-width:860px){
+ nav a:not(.btn){display:none}
+ .hero{padding:48px 0 64px}
+ .hero .wrap,.story .wrap,.visit{grid-template-columns:1fr}
+ .hero .wrap{gap:40px}
+ h1{font-size:44px}
+ h2{font-size:36px}
+ .lead{font-size:17px}
+ .counter{min-height:420px;padding:40px 24px}
+ section{padding:64px 0}
+ .goods{grid-template-columns:1fr 1fr}
+ .good:nth-child(2){border-right:0}
+ .good:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .story .wrap,.visit{gap:32px}
+ .story blockquote{font-size:24px}
+ .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--paper);border-top:1px solid var(--line);padding:12px;gap:12px}
+ .mbar a{flex:1;justify-content:center}
+ footer{padding-bottom:96px}
+}
+</style>
+</head>
+<body>
+<div class="demo">Ukázka webu připravená zdarma pro Uzenářství Hlavinka · výrobky, ceny a fotky doplníme podle vás</div>
+
+<header><div class="wrap">
+ <a class="logo" href="#">Uzenářství Hlavinka<small>Vídeňská 91, Brno-Štýřice</small></a>
+ <nav><a href="#vyrobky">Výrobky</a><a href="#recenze">Recenze</a><a href="#prodejna">Prodejna</a><a class="btn btn-accent" href="tel:+420739531300">Zavolat</a></nav>
+</div><hr class="rule"></header>
+
+<section class="hero"><div class="wrap">
+ <div>
+  <div class="since">Uzenářství na Vídeňské v Brně</div>
+  <h1>Uzeniny podle prvorepublikových receptur</h1>
+  <p class="lead">Klobásy, špekáčky, paštiky a slanina z vlastní výroby. Tradiční výrobky tak, jak se dělaly dřív, a vedle nich i nové chutě. Na oslavu vám připravíme masovou mísu.</p>
+  <div class="cta">
+   <a class="btn btn-accent" href="#vyrobky">Co vyrábíme</a>
+   <a class="btn btn-quiet" href="tel:+420739531300">Objednat mísu</a>
+  </div>
+  <div class="meta">
+   <div><small>Prodejna</small><div data-today>Po–Pá 8–16</div></div>
+   <div><small>Google</small><div><b>4,9</b> z 5 · 8 recenzí</div></div>
+  </div>
+ </div>
+ <div class="counter" aria-label="Lístek z pultu uzenářství">
+  <div class="slip">
+   <h3>Uzenářství Hlavinka</h3>
+   <div class="sub">Vídeňská 91 · Brno</div>
+   <hr class="rule">
+   <ul>
+    <li>Klobásy<span>i syrové</span></li>
+    <li>Špekáčky</li>
+    <li>Paštiky<span>z vlastní výroby</span></li>
+    <li>Slanina</li>
+    <li>Masové mísy<span>na objednávku</span></li>
+   </ul>
+   <div class="foot">podle prvorepublikových receptur</div>
+  </div>
+ </div>
+</div></section>
+
+<section id="vyrobky" style="padding-top:0"><div class="wrap">
+ <h2>Co vyrábíme</h2>
+ <p class="intro">Přesný sortiment a ceny doplníme podle toho, co máte zrovna v pultu.</p>
+ <div class="goods">
+  <div class="good"><div class="n">I.</div><h3>Klobásy</h3><p>Uzené i syrové. Podle zákazníků to nejlepší, co tu dostanete.</p></div>
+  <div class="good"><div class="n">II.</div><h3>Špekáčky</h3><p>Na opékání i k pivu, tradiční recept.</p></div>
+  <div class="good"><div class="n">III.</div><h3>Paštiky</h3><p>Z vlastní výroby, k chlebu i na stůl pro hosty.</p></div>
+  <div class="good"><div class="n">IV.</div><h3>Masové mísy</h3><p>Na oslavy i rodinné sešlosti. Stačí zavolat a domluvit se předem.</p></div>
+ </div>
+</div></section>
+
+<section id="recenze" class="story"><div class="wrap">
+ <div>
+  <blockquote>Tradiční výrobky zpracované podle prvorepublikových receptur a vedle nich nové chutě.</blockquote>
+  <div class="who">Tak se uzenářství představuje na Facebooku</div>
+ </div>
+ <div>
+  <div class="rating"><b>4,9</b><span>z 8 recenzí na Googlu</span></div>
+  <ul class="praise">
+   <li><b>Klobásy</b> zákazníci chválí nejvíc, hlavně ty syrové</li>
+   <li><b>Paštiky a slanina</b> se v recenzích opakují taky</li>
+   <li>Jeden zákazník vás přirovnal k <b>cukrárně pro chlapy</b></li>
+  </ul>
+ </div>
+</div></section>
+
+<section id="prodejna"><div class="wrap visit">
+ <div>
+  <h2>Prodejna</h2>
+  <p>Vídeňská 538/91, 639 00 Brno-Štýřice</p>
+  <a class="phone" href="tel:+420739531300">739 531 300</a>
+  <p style="margin-top:4px"><a href="mailto:hlavinka.obcerstveni@seznam.cz">hlavinka.obcerstveni@seznam.cz</a></p>
+  <div class="links">
+   <a class="btn btn-accent" href="https://www.google.com/maps/search/?api=1&query=Uzen%C3%A1%C5%99stv%C3%AD+Hlavinka+V%C3%ADde%C5%88sk%C3%A1+91+Brno">Navigovat</a>
+  </div>
+ </div>
+ <table class="hours" data-hours>
+  <tr data-d="1"><td>Pondělí</td><td>8:00–16:00</td></tr>
+  <tr data-d="2"><td>Úterý</td><td>8:00–16:00</td></tr>
+  <tr data-d="3"><td>Středa</td><td>8:00–16:00</td></tr>
+  <tr data-d="4"><td>Čtvrtek</td><td>8:00–16:00</td></tr>
+  <tr data-d="5"><td>Pátek</td><td>8:00–16:00</td></tr>
+  <tr class="off" data-d="6"><td>Sobota</td><td>zavřeno</td></tr>
+  <tr class="off" data-d="0"><td>Neděle</td><td>zavřeno</td></tr>
+ </table>
+</div></section>
+
+<footer><hr class="rule"><div class="wrap"><span>© Uzenářství Hlavinka, Brno</span><span>Ukázka webu · shopnetwebovky.netlify.app</span></div></footer>
+<div class="mbar"><a class="btn btn-accent" href="tel:+420739531300">Zavolat</a><a class="btn btn-quiet" href="https://www.google.com/maps/search/?api=1&query=Uzen%C3%A1%C5%99stv%C3%AD+Hlavinka+V%C3%ADde%C5%88sk%C3%A1+91+Brno">Navigovat</a></div>
+<script>
+(function(){var d=new Date().getDay(),r=document.querySelector('[data-hours] tr[data-d="'+d+'"]');if(r){r.classList.add("today");var t=document.querySelector("[data-today]");if(t)t.textContent=r.classList.contains("off")?"Dnes zavřeno, otevíráme v pondělí v 8":"Dnes otevřeno "+r.lastElementChild.textContent.replace(/:00/g,"");}})();
+</script>
+</body>
+</html>
