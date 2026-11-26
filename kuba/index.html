@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Když Kuba peče – zákusky, dorty a zmrzlina v Kyjově</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Řemeslná výroba zákusků a dortů v Kyjově. Poctivá zmrzlina, dorty na objednávku a sladký catering na svatby i narozeniny. Třída Komenského 548.">
+<meta property="og:title" content="Ukázka webu: Když Kuba peče, Kyjov">
+<meta property="og:description" content="Takhle by mohl vypadat váš web. Ukázka připravená zdarma.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238c2a3c'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23fbf3ee'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Instrument+Serif&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#faf6f2;--card:#fffdfb;--raised:#f1ebe5;
+ --ink:#231c1a;--ink2:#5f5450;--muted:#7d716c;
+ --line:rgba(35,28,26,.09);
+ --accent:#8c2a3c;--accent-ink:#fbf3ee;
+ --marble:#efe9e4;
+ --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;font-size:16px}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.serif{font-family:"Instrument Serif",Georgia,serif;font-weight:400}
+.demo{background:var(--ink);color:#d9cfca;text-align:center;font-size:13px;padding:8px 16px}
+
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:"Instrument Serif",Georgia,serif;font-size:26px;text-decoration:none;letter-spacing:-.01em}
+nav{display:flex;align-items:center;gap:28px}
+nav a{text-decoration:none;font-size:15px;color:var(--ink2);transition:color .15s var(--ease)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 20px;border-radius:10px;font-weight:500;font-size:16px;text-decoration:none;transition:background-color .15s var(--ease),transform .12s var(--ease)}
+.btn:active{transform:scale(.98)}
+.btn svg{width:18px;height:18px;stroke:currentColor;stroke-width:1.5;fill:none}
+.btn-accent{background:var(--accent);color:var(--accent-ink)}
+.btn-accent:hover{background:#76212f}
+.btn-quiet{background:var(--raised);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.btn-quiet:hover{background:#e8e0d9}
+nav .btn{height:36px;padding:0 16px;font-size:15px}
+
+.hero{padding:80px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}
+.where{font-size:14px;color:var(--muted)}
+h1{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:72px;line-height:1.02;letter-spacing:-.02em;margin:16px 0 20px}
+.lead{font-size:19px;color:var(--ink2);max-width:32rem}
+.cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.meta{display:flex;gap:32px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);flex-wrap:wrap}
+.meta small{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+.meta div div{font-size:15px;color:var(--ink2)}
+.meta b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
+
+/* moment: vitrína se zmrzlinou */
+.case{background:linear-gradient(180deg,#f6f1ec,#ece4dd);border:1px solid var(--line);border-radius:20px;padding:40px 36px 0;position:relative;overflow:hidden}
+.case h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:28px}
+.case p{font-size:14px;color:var(--muted);margin-top:4px}
+.tubs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px;position:relative;z-index:1}
+.tub{background:#fff;border-radius:12px 12px 4px 4px;padding:14px 14px 16px;box-shadow:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(35,28,26,.06)}
+.scoop{height:84px;border-radius:44px 44px 10px 10px;margin-bottom:14px;position:relative}
+.scoop:after{content:"";position:absolute;left:18%;top:14px;width:26%;height:12px;border-radius:12px;background:rgba(255,255,255,.35)}
+.f1{background:#a8b77a}
+.f2{background:#f2d86b}
+.f3{background:#f4ead8}
+.f3:after{background:rgba(255,255,255,.6)}
+.tag{font-size:14px;font-weight:500}
+.tag span{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.counter{height:72px;margin:28px -36px 0;background:var(--marble);border-top:1px solid rgba(35,28,26,.08);position:relative}
+.counter:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 60px,rgba(35,28,26,.025) 60px 61px)}
+
+section{padding:96px 0}
+h2{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:48px;line-height:1.05;letter-spacing:-.02em}
+.intro{color:var(--ink2);font-size:17px;max-width:36rem;margin:12px 0 40px}
+
+.offer{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+.card.big{background:var(--accent);color:var(--accent-ink);border:0;display:flex;flex-direction:column;justify-content:space-between;min-height:280px}
+.card h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:30px;line-height:1.1;margin-bottom:10px}
+.card p{color:var(--ink2);font-size:15px}
+.card.big p{color:#f0d9dc}
+.card.big a{color:var(--accent-ink);font-weight:500;font-size:15px}
+.num{font-size:13px;color:var(--muted);margin-bottom:28px;font-variant-numeric:tabular-nums}
+.card.big .num{color:#e3bcc2}
+
+.reviews-sec{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px}
+.quotes p{font-family:"Instrument Serif",Georgia,serif;font-size:32px;line-height:1.2;letter-spacing:-.01em}
+.who{margin-top:16px;font-size:14px;color:var(--muted)}
+.rating{display:flex;align-items:baseline;gap:12px}
+.rating b{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:64px;line-height:1;font-variant-numeric:tabular-nums}
+.rating span{color:var(--ink2)}
+
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.visit p{color:var(--ink2);margin-top:12px}
+.phone{display:inline-block;margin-top:8px;font-size:22px;text-decoration:none;font-variant-numeric:tabular-nums}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:12px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--ink2)}
+.hours tr.today td{color:var(--ink);font-weight:500}
+.hours tr.today td:first-child{box-shadow:inset 3px 0 0 var(--accent);padding-left:12px}
+.links{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+
+footer{padding:32px 0 48px;font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.mbar{display:none}
+
+@media(max-width:860px){
+ nav a:not(.btn){display:none}
+ .hero{padding:48px 0 64px}
+ .hero .wrap,.offer,.quotes,.visit{grid-template-columns:1fr}
+ .hero .wrap{gap:40px}
+ h1{font-size:48px}
+ h2{font-size:38px}
+ .lead{font-size:17px}
+ section{padding:64px 0}
+ .case{padding:32px 20px 0}
+ .counter{margin:24px -20px 0}
+ .tubs{gap:10px}
+ .scoop{height:64px}
+ .quotes{gap:32px}
+ .quotes p{font-size:26px}
+ .visit{gap:32px}
+ .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--bg);border-top:1px solid var(--line);padding:12px;gap:12px}
+ .mbar a{flex:1;justify-content:center}
+ footer{padding-bottom:96px}
+}
+</style>
+</head>
+<body>
+<div class="demo">Ukázka webu připravená zdarma pro Když Kuba peče · nabídku, ceny a fotky doplníme podle vás</div>
+
+<header><div class="wrap">
+ <a class="logo" href="#">Když Kuba peče</a>
+ <nav><a href="#nabidka">Nabídka</a><a href="#recenze">Recenze</a><a href="#kde">Kde nás najdete</a><a class="btn btn-accent" href="tel:+420727808058">Zavolat</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+ <div>
+  <div class="where">Třída Komenského 548, Kyjov</div>
+  <h1>Zákusky, dorty a poctivá zmrzlina z Kyjova</h1>
+  <p class="lead">Řemeslná výroba zákusků a dortů. Poctivou zmrzlinu děláme sami, i v netradičních příchutích. Dort na oslavu nebo sladký stůl na svatbu vám připravíme na objednávku.</p>
+  <div class="cta">
+   <a class="btn btn-accent" href="#nabidka">Co pečeme</a>
+   <a class="btn btn-quiet" href="tel:+420727808058"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Objednat dort</a>
+  </div>
+  <div class="meta">
+   <div><small>Dnes</small><div data-today>Po–Pá 9–18, So–Ne 13–18</div></div>
+   <div><small>Google</small><div><b>4,8</b> z 5 · 30 recenzí</div></div>
+  </div>
+ </div>
+ <div class="case" aria-label="Vitrína se zmrzlinou">
+  <h3>Ve vitríně</h3>
+  <p>Ukázka, jak tu můžete ukazovat dnešní příchutě</p>
+  <div class="tubs">
+   <div class="tub"><div class="scoop f1"></div><div class="tag">Pistácie<span>ze svatebního výběru</span></div></div>
+   <div class="tub"><div class="scoop f2"></div><div class="tag">Citron<span>osvěžující</span></div></div>
+   <div class="tub"><div class="scoop f3"></div><div class="tag">Vanilka<span>klasika</span></div></div>
+  </div>
+  <div class="counter"></div>
+ </div>
+</div></section>
+
+<section id="nabidka" style="padding-top:0"><div class="wrap">
+ <h2>Co pečeme</h2>
+ <p class="intro">Všechno vzniká ručně u nás v Kyjově. Přesnou nabídku a ceny doplníme podle toho, co zrovna máte.</p>
+ <div class="offer">
+  <div class="card big">
+   <div><div class="num">01</div><h3>Svatby a oslavy</h3><p>Sladký catering na svatbu i narozeniny. Zákusky, dorty i zmrzlina, domluvíme se na všem předem.</p></div>
+   <a href="tel:+420727808058">Domluvit termín →</a>
+  </div>
+  <div class="card"><div class="num">02</div><h3>Zákusky a dorty</h3><p>Mini dezerty, tartaletky a dorty na objednávku. Zákusky plné výrazných chutí, jak píšou zákazníci.</p></div>
+  <div class="card"><div class="num">03</div><h3>Zmrzlina</h3><p>Poctivá zmrzlina i v netradičních příchutích, třeba tvaroh se švestkovou marmeládou a mákem.</p></div>
+ </div>
+</div></section>
+
+<section id="recenze" class="reviews-sec"><div class="wrap">
+ <div class="rating"><b>4,8</b><span>z 30 recenzí na Googlu · na Facebooku doporučuje 100 %</span></div>
+ <div class="quotes">
+  <div><p>„Krásné zákusky plné intenzivních chutí, zmrzlina poctivá…“</p><div class="who">Petra L., Facebook</div></div>
+  <div><p>„Na svatbě jsme měli zmrzlinu od Kuby. Volba byla pistácie, citron, vanilka. A byla to dobrá volba.“</p><div class="who">Andrea P., Facebook</div></div>
+ </div>
+</div></section>
+
+<section id="kde"><div class="wrap visit">
+ <div>
+  <h2>Kde nás najdete</h2>
+  <p>Třída Komenského 548, 697 01 Kyjov</p>
+  <a class="phone" href="tel:+420727808058">727 808 058</a>
+  <p style="margin-top:4px"><a href="mailto:kdyzkubapece@gmail.com">kdyzkubapece@gmail.com</a></p>
+  <div class="links">
+   <a class="btn btn-accent" href="https://www.google.com/maps/search/?api=1&query=Kdy%C5%BE+Kuba+pe%C4%8De+Kyjov">Navigovat</a>
+   <a class="btn btn-quiet" href="https://www.instagram.com/kdyz_kuba_pece/">Instagram</a>
+  </div>
+ </div>
+ <table class="hours" data-hours>
+  <tr data-d="1"><td>Pondělí</td><td>9:00–18:00</td></tr>
+  <tr data-d="2"><td>Úterý</td><td>9:00–18:00</td></tr>
+  <tr data-d="3"><td>Středa</td><td>9:00–18:00</td></tr>
+  <tr data-d="4"><td>Čtvrtek</td><td>9:00–18:00</td></tr>
+  <tr data-d="5"><td>Pátek</td><td>9:00–18:00</td></tr>
+  <tr data-d="6"><td>Sobota</td><td>13:00–18:00</td></tr>
+  <tr data-d="0"><td>Neděle</td><td>13:00–18:00</td></tr>
+ </table>
+</div></section>
+
+<footer><div class="wrap"><span>© Když Kuba peče, Kyjov</span><span>Ukázka webu · shopnetwebovky.netlify.app</span></div></footer>
+<div class="mbar"><a class="btn btn-accent" href="tel:+420727808058">Zavolat</a><a class="btn btn-quiet" href="https://www.google.com/maps/search/?api=1&query=Kdy%C5%BE+Kuba+pe%C4%8De+Kyjov">Navigovat</a></div>
+<script>
+(function(){var d=new Date().getDay(),r=document.querySelector('[data-hours] tr[data-d="'+d+'"]');if(r){r.classList.add("today");var t=document.querySelector("[data-today]");if(t)t.textContent="Otevřeno "+r.lastElementChild.textContent.replace(/:00/g,"");}})();
+</script>
+</body>
+</html>
